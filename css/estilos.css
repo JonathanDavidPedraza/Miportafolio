@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap");
+
+body {
+  font-family: sans-serif;
+  min-height: 150vh;
+  background: #000000;
+}
+
+header {
+  position: relative;
+  z-index: 1000000;
+}
+
+p {
+  font-size: 1.15rem;
+  font-family: "Muli", sans-serif;
+}
+
+.navbar {
+  background: transparent !important;
+  transition: 0.5s;
+}
+
+.navbar-nav {
+  margin-right: 80px;
+  padding: 20px;
+}
+
+.navbar-dark .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+  font-family: "Roboto", sans-serif;
+  color: rgb(229, 255, 0);
+  font-size: 3vw;
+}
+
+.navbar.scrolled {
+  background: #000000f8 !important;
+  transition: 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 230, 0);
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: #000000;
+  background: #ffffff;
+}
+
+
+
+
+
+/*Resolucion para dispositivos moviles muy pequeños*/
+@media (max-width: 575px) {
+  #particles-js {
+    display: none;
+  }
+
+  .face {
+    display: none;
+  }
+
+  .contenedor1 {
+    width: 100%;
+    height: 100px;
+    margin-top: 60px;
+  }
+
+  .h3-responsive {
+    display: none;
+  }
+
+  .p1 {
+    font-size: 15px;
+    font-family: "Muli", sans-serif;
+  }
+
+  .fotografias,
+  .sec2 {
+    position: relative;
+    background-size: cover;
+    height: 70vw;
+  }
+
+  .sec2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(#000000, tranparent);
+    pointer-events: none;
+  }
+
+  .sec2 :after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(360deg, #000000, transparent);
+    pointer-events: none;
+  }
+
+  .contentBox h1 {
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    float: right;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .contentBox p {
+    color: #ffffff;
+    font-size: 2, 5vw;
+    float: right;
+    width: 70%;
+    height: 100%;
+  }
+
+  .fotografias {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 15vh;
+    background-color: #000000;
+
+  }
+
+  .contentBox img {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+  }
+
+  .contenedor12 {
+    background-color: blue;
+    width: 100%;
+    height: 20vw;
+  }
+
+  .habilidades {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+
+
+
+
+
+/*Resolucion para dispositivos moviles pequeños*/
+@media (min-width: 576px) and (max-width: 767px) {
+  #particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .face {
+    display: none;
+  }
+
+  .contenedor1 {
+    width: 100%;
+    height: 100px;
+    margin-top: px;
+  }
+
+  .h3-responsive {
+    display: none;
+  }
+
+  .p1 {
+    font-family: "Muli", sans-serif;
+  }
+
+  .sec2 {
+    position: relative;
+    background-size: cover;
+    height: 60vw;
+  }
+
+  .sec2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(#000000, tranparent);
+    pointer-events: none;
+  }
+
+  .sec2 :after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(360deg, #000000, transparent);
+    pointer-events: none;
+  }
+
+  .contentBox h1 {
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    float: right;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .contentBox p {
+    color: #ffffff;
+    font-size: 2, 5vw;
+    float: right;
+    width: 55%;
+    height: 100%;
+  }
+
+  .fotografias {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    background-color: #000000;
+
+  }
+
+  .fotografias {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 15vh;
+
+  }
+
+  .contentBox img {
+    width: 100%;
+    height: 15vw;
+    align-content: center;
+    align-items: center;
+  }
+
+  .habilidades {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+
+
+
+
+
+
+/*Resolucion para dispositivos medianos tablests*/
+@media (min-width: 768px) and (max-width: 991px) {
+  #particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .face {
+    display: none;
+  }
+
+  .contenedor1 {
+    width: 100%;
+    height: 100px;
+    margin-top: 85px;
+  }
+
+  .h3-responsive {
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: orange;
+  }
+
+  .p1 {
+    font-family: "Muli", sans-serif;
+    font-size: 20px;
+  }
+
+  .sec2 {
+    position: relative;
+    background-size: cover;
+    height: 40vw;
+  }
+
+  .sec2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(#000000, tranparent);
+    pointer-events: none;
+  }
+
+  .sec2 :after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(360deg, #000000, transparent);
+    pointer-events: none;
+  }
+
+  .contentBox h1 {
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    float: right;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .contentBox p {
+    color: #ffffff;
+    font-size: 2vw;
+    float: right;
+    width: 50%;
+  }
+
+  .fotografias {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 25vh;
+    background-color: #000000;
+
+  }
+
+  .contentBox img {
+    width: 100%;
+    height: 20vw;
+    align-content: center;
+    align-items: center;
+  }
+
+  .habilidades {
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+
+
+
+
+
+
+/*Resolucion para dispositivos pc escritorio*/
+@media (min-width: 992px) {
+  #particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+
+  .contenedor1 {
+    width: 100%;
+    height: 100px;
+    margin-top: 85px;
+  }
+
+  .h3-responsive {
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    color: orange;
+  }
+
+  .p1 {
+    font-family: "Muli", sans-serif;
+    font-size: 30px;
+  }
+
+  .sec2 {
+    position: relative;
+    background-size: cover;
+    height: 40vw;
+    z-index: 99;
+  }
+
+  .sec2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000000, tranparent);
+    pointer-events: none;
+  }
+
+  .sec2 :after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(360deg, #000000, transparent);
+    pointer-events: none;
+  }
+
+  .contentBox h1 {
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    float: right;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .fotografias {
+    margin-top: 100px;
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    background-color: #000000;
+
+  }
+
+  .contentBox img {
+    width: 100%;
+    height: 20vw;
+    align-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .contentBox p {
+    color: #ffffff;
+    font-size: 2vw;
+    float: right;
+    width: 50%;
+  }
+
+  .habilidades {
+    font-size: 60px;
+  }
+
+}

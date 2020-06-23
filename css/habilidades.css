@@ -1,0 +1,59 @@
+/*Resolucion para dispositivos moviles muy pequeños*/
+@media (max-width: 575px) {
+  #circlebar .round {
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  #circlebar .round strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -14%;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: rgb(255, 230, 0);
+    font-weight: 100;
+  }
+}
+
+/*Resolucion para dispositivos moviles pequeños*/
+@media (min-width: 576px) and (max-width: 767px) {
+  #circlebar .round {
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  #circlebar .round strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25%;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: rgb(255, 230, 0);
+    font-weight: 100;
+  }
+}
+
+/*Resolucion para dispositivos medianos tablests*/
+@media (min-width: 768px) and (max-width: 991px) {
+  #circlebar .round {
+    min-height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  #circlebar .round strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15%;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: rgb(255, 230, 0);
+    font-weight: 100;
+  }
+}

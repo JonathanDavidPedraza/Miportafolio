@@ -1,0 +1,68 @@
+.tarjeta-wrap {
+	margin: 20px;
+	-webkit-perspective: 900;
+	perspective: 900;
+
+}
+
+.tarjeta {
+	width: 280px;
+	height: 390px;
+	background: orange;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: .8s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65)
+}
+
+.adelante,
+.atras {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.adelante {
+	width: 100%
+}
+
+.atras {
+	transform: rotateY(180deg);
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+
+}
+
+.tarjeta-wrap:hover .tarjeta {
+	transform: rotateY(180deg);
+}
+
+.carta1 {
+	background-image: url(images/img1.jpg);
+	background-size: cover;
+}
+
+.carta2 {
+	background-image: url(images/img2.jpg);
+	background-size: cover;
+}
+
+.carta3 {
+	background-image: url(images/img3.jpg);
+	background-size: cover;
+}
+
+.carta4 {
+	background-image: url(images/img4.jpg);
+	background-size: cover;
+}

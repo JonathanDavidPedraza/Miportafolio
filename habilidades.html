@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>circularprogress</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/habilidades.css" />
+  <link rel="stylesheet" href="css/boton.css" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap");
+
+    body {
+      background-color: #19022b;
+    }
+
+    #circlebar {
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      color: white;
+      margin-top: 100px;
+      z-index: 10;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 30px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    .round {
+      min-height: 200px;
+      margin-top: 30px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .round strong {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -25%;
+      transform: translate(-50%);
+      font-size: 40px;
+      color: rgb(255, 230, 0);
+      font-weight: 100;
+    }
+
+    #circlebar span {
+      display: block;
+      color: #ffffff;
+      font-size: 17px;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    #circlebar span i {
+      color: #ffffff;
+      font-size: 22px;
+      margin-right: 7px;
+    }
+
+    .btn {
+      background-color: white;
+      float: right;
+    }
+
+    section button:hover {
+      background-color: rgb(255, 230, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <section id="circlebar">
+    <nav class="navbar navbar-lg navbar-dark bg-dark fixed-top">
+      <button class="btn" onclick="circlle('.round');">Resfresh</button>
+      <a href="index.html" class="btn-neon">
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+        Home
+      </a>
+    </nav>
+
+    <h1>Habilidades Técnicas</h1>
+    <p>Diseño, Codigo y Fotografía</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.60" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Illustrator</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.20" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Animate</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.24" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>InDesing</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.15" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>After Effects</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.50" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Bootstrap</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.60" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Visual Studio Code</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.40" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Html</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.30" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Css3</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.50" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Photoshop</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.32" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Premiere</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.23" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>lightroom</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.10" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Media Encoder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br />
+  <br />
+
+  <section id="circlebar">
+    <h1>Habilidades Blandas</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.80" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Creatividad</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.70" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Sociable</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.24" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Acertivo</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.85" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Adaptable</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.74" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Comunicación</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.69" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Cultura Empresarial</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.66" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Servicio al Cliente</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.87" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Inteligencia Emocional</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.77" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Productividad</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.75" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Fluidez Verbal</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.59" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Gestion del Cambio</span>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <div class="round" data-value="0.82" data-size="180" data-thickness="12">
+            <strong></strong>
+            <span>Trabajo en Equipo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+
+  <script>
+    function circlle(el) {
+      $(el)
+        .circleProgress({
+          fill: {
+            color: "rgb(255, 230, 0)"
+          }
+        })
+        .on("circle-animation-progress", function (
+          event,
+          progress,
+          stepValue
+        ) {
+          $(this)
+            .find("strong")
+            .text(String(stepValue.toFixed(2)).substr(2) + "%");
+        });
+    }
+    circlle(".round");
+  </script>
+</body>
+
+</html>
