@@ -3,7 +3,7 @@
 
 body {
   font-family: sans-serif;
-  min-height: 150vh;
+  min-height: 0vh;
   background: #000000;
 }
 
@@ -12,9 +12,16 @@ header {
   z-index: 1000000;
 }
 
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+
+}
+
 p {
   font-size: 1.15rem;
   font-family: "Muli", sans-serif;
+  color: white;
 }
 
 .navbar {
@@ -164,6 +171,15 @@ p {
   .habilidades {
     font-size: 20px;
     font-family: "Roboto", sans-serif;
+    margin: 20px;
+  }
+
+  .btn-neon {
+    border: solid 2px yellow;
+  }
+
+  .container {
+    margin-top: 30px;
   }
 }
 
@@ -282,6 +298,10 @@ p {
     font-size: 30px;
     font-family: "Roboto", sans-serif;
   }
+
+  .btn-neon {
+    border: solid 2px yellow;
+  }
 }
 
 
@@ -384,6 +404,10 @@ p {
     font-size: 40px;
     font-family: "Roboto", sans-serif;
   }
+
+  .btn-neon {
+    border: solid 2px yellow;
+  }
 }
 
 
@@ -447,6 +471,7 @@ p {
     pointer-events: none;
   }
 
+
   .contentBox h1 {
     font-weight: 500;
     color: #ffffff;
@@ -463,7 +488,6 @@ p {
     width: 100%;
     height: 25vh;
     background-color: #000000;
-
   }
 
   .contentBox img {
@@ -483,6 +507,28 @@ p {
   .habilidades {
     font-size: 50px;
     font-family: "Roboto", sans-serif;
+
+
+  }
+
+  .btn-neon {
+    border: solid 2px yellow;
+  }
+
+  .map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin: 20px;
+  }
+
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 
 

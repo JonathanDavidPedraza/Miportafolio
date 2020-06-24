@@ -1,45 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
-:root{
-    --facebook: #3559a5;
+:root {
+    --facebook: #3559a5 !important;
     --instagram: #d32e4c;
     --whatsapp: #62ee37;
     --linkedin: #00a9b5;
 }
-.redes-container ul li{
+
+.redes-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-container ul li {
     display: inline-block;
     margin: 0 15px;
     width: 50px;
     height: 50px;
     text-align: center;
 }
-.redes-container ul li a{
+
+.redes-container ul li a {
     display: block;
     padding: 0 10px;
     background: #333333;
     color: #ffffff;
     line-height: 50px;
     font-size: 30px;
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0,.9);
+    box-shadow: 0 3px 5px 0px rgba(211, 210, 210, 0.9);
     transition: .2s;
 }
-.redes-container ul:hover{
+
+.redes-container ul:hover {
     filter: blur(0.5px);
 }
-.redes-container ul li a:hover{
+
+.redes-container ul li a:hover {
     filter: none;
     transform: translateY(-3px) scale(1.5);
-    box-shadow: 0 5px 5px 0px rgba(0, 0, 0,1.0);
+    box-shadow: 0 5px 5px 0px rgb(255, 255, 255);
 }
 
-.redes-container ul li .facebook:hover{
+.redes-container ul li .facebook:hover {
     background: var(--facebook);
 }
-.redes-container ul li .instagram:hover{
+
+.redes-container ul li .instagram:hover {
     background: var(--instagram);
 }
-.redes-container ul li .whatsapp:hover{
+
+.redes-container ul li .whatsapp:hover {
     background: var(--whatsapp);
 }
-.redes-container ul li .linkedin:hover{
+
+.redes-container ul li .linkedin:hover {
     background: var(--linkedin);
+}
+
+/*Resolucion para dispositivos moviles muy pequeños*/
+@media (max-width: 575px) {
+    .redes-container ul li {
+        display: inline-block;
+        margin: 0 20px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+
+    .redes-container ul li a {
+        display: block;
+        padding: 0 6px;
+        background: #333333;
+        color: #ffffff;
+        line-height: 40px;
+        font-size: 20px;
+        box-shadow: 0 3px 5px 0px rgba(211, 210, 210, 0.9);
+        transition: .2s;
+    }
+
+    .redes-container ul:hover {
+        filter: blur(0.5px);
+    }
+
+    .redes-container ul li a:hover {
+        filter: none;
+        transform: translateY(-3px) scale(1.5);
+        box-shadow: 0 3px 3px 0px rgb(255, 255, 255);
+    }
 }
