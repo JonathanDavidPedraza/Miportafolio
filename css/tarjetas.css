@@ -6,6 +6,7 @@
 }
 
 .tarjeta {
+	margin: 10px;
 	width: 280px;
 	height: 410px;
 	background: rgb(214, 200, 0);

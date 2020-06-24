@@ -154,15 +154,37 @@
 
   <!-- Card Narrower -->
 
+
+
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="images/fotoperfil.jpeg" class="card-img" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h1>Jonathan Pedraza</h1>
+          <audio src="audio/audio.m4a" controls loop></audio>
+          <h5 style="color:rgb(255, 230, 0)">Productor Multimedia</h6>
+            <p>Me llamo Jonathan, me gusta mucho el diseño gráfico, la fotografía y la edición, soy una persona muy
+              creativa, estudio en el SENA producción de multimedia, realizo todo tipo de trabajos publicitarios,
+              corporativos y editoriales.
+            </p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Card Regular -->
 
   <div class="row">
     <center>
-      <div class="col-xs-12 col-sm-12- col-md-6 col-lg-5">
+      <div class="col-xs-12 col-sm-12- col-md-6 col-lg-4">
 
         <!-- Card image -->
-        <div class="view view-cascade ">
-          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/men.jpg" alt="Card image cap">
+        <div class="mb-4 ">
+          <img class="card-img-top" style="width: 300px; height: 400px;" src="images/fotoperfil.jpeg" alt="Card image cap">
           <a>
             <div class="bg-white"></div>
           </a>
@@ -171,9 +193,10 @@
         <!-- Card content -->
         <section id="descripcion">
           <div class="card-body card-body-cascade text-center">
+            <audio src="audio/audio.m4a" controls loop></audio>
 
             <!-- Title -->
-            <h1>Jonathan Pedraza</h4>
+            <h1>Jonathan Pedraza</h1>
               <!-- Subtitle -->
               <h5 style="color:rgb(255, 230, 0)">Productor Multimedia</h6>
                 <!-- Text -->
@@ -390,59 +413,73 @@
   </center>
 
 
+  <div class="jumbotron jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 style="color: black;" font-family: "Muli" , sans-serif;>Gracias por ver mi portafolio</h2>
+            <h2 style="color: black;" font-family: "Muli" , sans-serif;>@Jonathan David Pedraza</h2>
+        </div>
+        <div class="col-md-6">
+        <img src="images/animacionlogo.ico" style="float: right;" width="100px" height="100px">
+      </div>
+
+      </div>
+    </div>
+  </div>
 
 
 
-  <!-- Optional JavaScript -->
-  <script src="js/particles.min.js"></script>
-  <script src="js/activacion.js"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+      <!-- Optional JavaScript -->
+      <script src="js/particles.min.js"></script>
+      <script src="js/activacion.js"></script>
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
-  <script type="text/JavaScript">
-    $(document).scroll(function(){
+      <script type="text/JavaScript">
+        $(document).scroll(function(){
         $('.navbar').toggleClass('scrolled', $(this).
         scrollTop() > $('.navbar').height());
       });
     </script>
 
-  <script>
-    document.querySelector("body").addEventListener("mousemove", eyeball);
+      <script>
+        document.querySelector("body").addEventListener("mousemove", eyeball);
 
-    function eyeball() {
-      var eye = document.querySelectorAll(".eye");
-      eye.forEach(function (eye) {
-        let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
-        let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
-        let radian = Math.atan2(event.pageX - x, event.pageY - y);
-        let rot = radian * (180 / Math.PI) * -1 + 270;
-        eye.style.transform = "rotate(" + rot + "deg)";
-      });
-    }
-  </script>
-  <script type="text/JavaScript">
-    $(document).scroll(function(){
+        function eyeball() {
+          var eye = document.querySelectorAll(".eye");
+          eye.forEach(function (eye) {
+            let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+            let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+            let radian = Math.atan2(event.pageX - x, event.pageY - y);
+            let rot = radian * (180 / Math.PI) * -1 + 270;
+            eye.style.transform = "rotate(" + rot + "deg)";
+          });
+        }
+      </script>
+      <script type="text/JavaScript">
+        $(document).scroll(function(){
       $('.navbar').toggleClass('scrolled', $(this).
       scrollTop() > $('.navbar').height());
     });
   </script>
 
-  <script>
-    import {
-      mdbCard,
-      mdbBtn
-    } from "mdbvue";
-    export default {
-      name: "JumbotronPage",
-      components: {
-        mdbCard,
-        mdbBtn,
-      },
-    };
-  </script>
+      <script>
+        import {
+          mdbCard,
+          mdbBtn
+        } from "mdbvue";
+        export default {
+          name: "JumbotronPage",
+          components: {
+            mdbCard,
+            mdbBtn,
+          },
+        };
+      </script>
 </body>
 
 </html>

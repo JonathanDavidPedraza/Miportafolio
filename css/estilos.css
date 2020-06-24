@@ -73,7 +73,11 @@ p {
   .navbar-light .navbar-brand:visited {
     font-family: "Roboto", sans-serif;
     color: rgb(229, 255, 0);
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .carousel {
+    margin-top: 100px;
   }
 
 
@@ -96,7 +100,8 @@ p {
   }
 
   .p1 {
-    font-size: 15px;
+    margin: 5px;
+    font-size: 12px;
     font-family: "Muli", sans-serif;
   }
 
@@ -171,7 +176,7 @@ p {
   .habilidades {
     font-size: 20px;
     font-family: "Roboto", sans-serif;
-    margin: 20px;
+    margin: 30px;
   }
 
   .btn-neon {
