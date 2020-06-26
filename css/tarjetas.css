@@ -9,7 +9,7 @@
 	margin: 10px;
 	width: 280px;
 	height: 410px;
-	background: rgb(214, 200, 0);
+	background: #FFD700;
 	position: relative;
 	transform-style: preserve-3d;
 	transition: .8s ease;
